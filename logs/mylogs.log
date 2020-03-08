@@ -1,0 +1,22 @@
+[INFO ] 2020-03-05 21:16:32.589 [main] Log - Scenario start point: Dzone header comparison
+[INFO ] 2020-03-05 21:16:37.374 [main] Log - user is on: https://dzone.com/articles/gradle-vs-maven 
+[INFO ] 2020-03-05 21:16:37.400 [main] Log - header 1 is taken: Gradle vs. Maven
+[INFO ] 2020-03-05 21:16:38.267 [main] Log - user is on: https://dzone.com/articles/api-security-weekly-issue-71
+[INFO ] 2020-03-05 21:16:38.286 [main] Log - header 2 is taken: API Security Weekly: Issue #71
+[WARN ] 2020-03-05 21:16:38.287 [main] Log - comparing data
+[INFO ] 2020-03-05 21:16:38.662 [main] Log - user is on: https://dzone.com/articles/gradle-vs-maven 
+[INFO ] 2020-03-05 21:16:38.679 [main] Log - header 1 is taken: Gradle vs. Maven
+[INFO ] 2020-03-05 21:16:39.490 [main] Log - user is on: https://dzone.com/articles/api-security-weekly-issue-71
+[INFO ] 2020-03-05 21:16:39.516 [main] Log - header 2 is taken: API Security Weekly: Issue #71
+[WARN ] 2020-03-05 21:16:39.516 [main] Log - comparing data
+[INFO ] 2020-03-07 16:24:24.419 [main] Log - Scenario start point: Dzone header comparison
+[INFO ] 2020-03-07 16:25:27.667 [main] Log - user is on: https://dzone.com/articles/gradle-vs-maven 
+[INFO ] 2020-03-07 16:25:27.696 [main] Log - header 1 is taken: Gradle vs. Maven
+[INFO ] 2020-03-07 16:25:30.799 [main] Log - user is on: https://dzone.com/articles/api-security-weekly-issue-71
+[INFO ] 2020-03-07 16:25:30.817 [main] Log - header 2 is taken: API Security Weekly: Issue #71
+[WARN ] 2020-03-07 16:25:30.818 [main] Log - comparing data
+[INFO ] 2020-03-07 16:25:31.454 [main] Log - user is on: https://dzone.com/articles/gradle-vs-maven 
+[INFO ] 2020-03-07 16:25:31.474 [main] Log - header 1 is taken: Gradle vs. Maven
+[INFO ] 2020-03-07 16:25:32.818 [main] Log - user is on: https://dzone.com/articles/api-security-weekly-issue-71
+[INFO ] 2020-03-07 16:25:32.838 [main] Log - header 2 is taken: API Security Weekly: Issue #71
+[WARN ] 2020-03-07 16:25:32.839 [main] Log - comparing data
