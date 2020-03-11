@@ -1,16 +1,24 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/Dzone.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/google_features/google.feature");
 formatter.feature({
-  "name": "Dzone header comparison",
-  "description": "",
-  "keyword": "Feature"
+  "name": "Google feature verification",
+  "description": "  Agile Story: User Stories, acceptance criteria\n  Basically we can pass here any additional information related to this feature file",
+  "keyword": "Feature",
+  "tags": [
+    {
+      "name": "@regression"
+    }
+  ]
 });
 formatter.scenario({
-  "name": "Dzone header comparison",
+  "name": "Google title verification after searching a term",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@dzone"
+      "name": "@regression"
+    },
+    {
+      "name": "@miniRegression"
     }
   ]
 });
@@ -18,47 +26,45 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "user is on first page we get header",
+  "name": "User is on google page",
   "keyword": "When "
 });
 formatter.match({
-  "location": "Dzone_steps.user_is_on_first_page_we_get_header()"
+  "location": "Google_StepsDefs.user_is_on_google_page()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user is on secod page we get header",
-  "keyword": "When "
+  "name": "User types wooden spoon into th search box",
+  "keyword": "And "
 });
 formatter.match({
-  "location": "Dzone_steps.user_is_on_secod_page_we_get_header()"
+  "location": "Google_StepsDefs.user_types_wooden_spoon_into_th_search_box()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "we compare headers",
-  "keyword": "Then "
+  "name": "User clicks to search button",
+  "keyword": "And "
 });
 formatter.match({
-  "location": "Dzone_steps.we_compare_headers()"
+  "location": "Google_StepsDefs.user_clicks_to_search_button()"
 });
 formatter.result({
-  "error_message": "org.junit.ComparisonFailure: expected:\u003c[Gradle vs. Maven]\u003e but was:\u003c[API Security Weekly: Issue #71]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:115)\n\tat org.junit.Assert.assertEquals(Assert.java:144)\n\tat step_definitions.Dzone_steps.we_compare_headers(Dzone_steps.java:42)\n\tat ✽.we compare headers(src/test/resources/features/Dzone.feature:6)\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
-  "name": "test again",
+  "name": "User should see wooden spoon in the title",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Dzone_steps.test_again()"
+  "location": "Google_StepsDefs.user_should_see_wooden_spoon_in_the_title()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
-formatter.embedding("image/png", "embedded0.png");
 formatter.after({
   "status": "passed"
 });
