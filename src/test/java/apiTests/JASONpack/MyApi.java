@@ -7,7 +7,22 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class MyApi {
+    /*
 
+        1. Create ==> Response response = RestAssured.get("full api") ==> getting response from server (code and data)
+
+                -   response.statusCode()   ---> getting response code(200, 404 ...)
+                -   response.asString()      ---> getting data response from server as String format
+
+        2. Create   JsonPath jp = response.jsonPath();    ==>> to access any attribute value as json path
+                                                                -- single element by using[1], ...
+                                                                -- or whole list of elements
+
+                -   jp.get("attribute path(as json path using http://jsonpathfinder.com/)")
+                -   jp.getList().size() ==> returning list size (count of each objects)
+                -   String firstName = jp.get("teachers[0].firstName");  ==>
+                -   int size = jp.getList("teachers").size();
+*/
     @Test
     public void getTeacher() {
         //Step 1. Hit API
@@ -57,7 +72,7 @@ public class MyApi {
         JsonPath jp = response.jsonPath();
         int size = jp.getList("teachers").size();
         System.out.println(size);
-        for(int i = 0; i < size; i++){
+        for (int i = 0; i < size; i++) {
             String path = "teachers[" + i + "].department";
             String department = jp.get(path);
             System.out.println(department);

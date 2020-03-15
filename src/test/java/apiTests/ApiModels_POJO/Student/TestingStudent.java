@@ -15,9 +15,10 @@ public class TestingStudent {
     // IF ATTRIBUTE WONT HAVE A FIELD (VALUE) THAN WE DO NEED TO PRINT IT'S DEFAULT VALUE AS NULL OR 0
     // SO, WE ADD TO OBJECT CLASS (TEACHER CLASS) @JsonInclude(JsonInclude.Include.NON_DEFAULT)
     // ADDED RIGHT ABOVE THE CLASS NAME
-    //-------------------------------------------
+    //--------------------------------------------------------------------------------------
     //1. Create Model class with getter/setter or Lombok for each nested object
-            // - @Data --> from Lombok
+            // annotations before class
+            // - @Data --> from Lombok (to use Lombok)
             // - @JsonInclude(JsonInclude.Include.NON_DEFAULT)  --->> to exclude NULL or 0 when printing
     //2. In TestClass
             //2.1 ObjectMapper objectMapper = new ObjectMapper();
@@ -55,4 +56,6 @@ public class TestingStudent {
         System.out.println(studentJson);
 
     }
+
+
 }
