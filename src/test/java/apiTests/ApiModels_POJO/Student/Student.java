@@ -14,5 +14,6 @@ public class Student {
     String lastName;
     Contact contact;
     Company company;
+    String joinDate;
 
 }

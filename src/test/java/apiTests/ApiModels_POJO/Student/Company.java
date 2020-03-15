@@ -11,4 +11,5 @@ public class Company {
     String companyName;
     String title;
     Address address;
+    String startDate;
 }
