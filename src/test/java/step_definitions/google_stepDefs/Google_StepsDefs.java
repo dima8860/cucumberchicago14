@@ -7,6 +7,7 @@ import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import pages.google_pages.GoogleLandingPage;
 import utilities.Driver;
+import utilities.Log;
 
 import java.util.Map;
 
@@ -18,6 +19,7 @@ public class Google_StepsDefs {
     public void user_is_on_google_page() {
         //1 get the google page
         Driver.getDriver().get("https://www.google.com");
+        Log.info("user is on home page");
     }
 
     @Then("User should see title contains Google")
@@ -25,6 +27,7 @@ public class Google_StepsDefs {
         // 2 - compare the actual title vs expected title
         String actualTitle = Driver.getDriver().getTitle();
         String expectedTitle = "Google";
+        Log.info("comparing title");
         Assert.assertTrue("Title does not contain expected value!",actualTitle.contains(expectedTitle));
     }
 

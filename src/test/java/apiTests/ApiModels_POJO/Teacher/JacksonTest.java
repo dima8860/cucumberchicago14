@@ -9,7 +9,7 @@ public class JacksonTest {
     @Test
     public void jackson() throws JsonProcessingException {
         Teacher teacher = new Teacher();
-        teacher.setEmail("gson@gmail.com");
+        teacher.setEmailAddress("gson@gmail.com");
         teacher.setFirstName("Jennifer");
         teacher.setLastName("Lawrence");
         teacher.setSalary(500);
@@ -56,14 +56,7 @@ public class JacksonTest {
         String teacherJson = objectMapper.writeValueAsString(teacher);
         System.out.println(teacherJson);
 
-        Subject subject = new Subject();
-        subject.setBatch(14);
-        String subjectData = objectMapper.writeValueAsString(subject);
-        System.out.println(subjectData);
 
-        teacher.setSubject(subject);
-        String teacherJson2 = objectMapper.writeValueAsString(teacher);
-        System.out.println(teacherJson2);
 
 
     }

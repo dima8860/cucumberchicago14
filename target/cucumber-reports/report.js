@@ -10,7 +10,7 @@ formatter.feature({
   ]
 });
 formatter.scenario({
-  "name": "Google title verification after searching a term",
+  "name": "Google title verification",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -18,7 +18,7 @@ formatter.scenario({
       "name": "@regression"
     },
     {
-      "name": "@miniRegression"
+      "name": "@googleTitleVerification"
     }
   ]
 });
@@ -36,31 +36,11 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User types wooden spoon into th search box",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Google_StepsDefs.user_types_wooden_spoon_into_th_search_box()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User clicks to search button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Google_StepsDefs.user_clicks_to_search_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User should see wooden spoon in the title",
+  "name": "User should see title contains Google",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Google_StepsDefs.user_should_see_wooden_spoon_in_the_title()"
+  "location": "Google_StepsDefs.user_should_see_title_contains_Google()"
 });
 formatter.result({
   "status": "passed"

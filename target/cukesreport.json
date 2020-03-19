@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 321229418,
+              "duration": 446661618,
               "status": "passed"
             },
             "match": {
@@ -14,14 +14,14 @@
             }
           }
         ],
-        "line": 12,
-        "name": "Google title verification after searching a term",
+        "line": 7,
+        "name": "Google title verification",
         "description": "",
-        "id": "google-feature-verification;google-title-verification-after-searching-a-term",
+        "id": "google-feature-verification;google-title-verification",
         "after": [
           {
             "result": {
-              "duration": 86938050,
+              "duration": 7096246,
               "status": "passed"
             },
             "match": {
@@ -34,10 +34,10 @@
         "steps": [
           {
             "result": {
-              "duration": 2677672832,
+              "duration": 1239495697,
               "status": "passed"
             },
-            "line": 13,
+            "line": 8,
             "name": "User is on google page",
             "match": {
               "location": "Google_StepsDefs.user_is_on_google_page()"
@@ -46,37 +46,13 @@
           },
           {
             "result": {
-              "duration": 91690463,
+              "duration": 3558559,
               "status": "passed"
             },
-            "line": 14,
-            "name": "User types wooden spoon into th search box",
+            "line": 9,
+            "name": "User should see title contains Google",
             "match": {
-              "location": "Google_StepsDefs.user_types_wooden_spoon_into_th_search_box()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3289784035,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "User clicks to search button",
-            "match": {
-              "location": "Google_StepsDefs.user_clicks_to_search_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 4614377,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "User should see wooden spoon in the title",
-            "match": {
-              "location": "Google_StepsDefs.user_should_see_wooden_spoon_in_the_title()"
+              "location": "Google_StepsDefs.user_should_see_title_contains_Google()"
             },
             "keyword": "Then "
           }
@@ -86,7 +62,7 @@
             "name": "@regression"
           },
           {
-            "name": "@miniRegression"
+            "name": "@googleTitleVerification"
           }
         ]
       }

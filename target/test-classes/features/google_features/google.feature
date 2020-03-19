@@ -3,7 +3,7 @@ Feature: Google feature verification
   Agile Story: User Stories, acceptance criteria
   Basically we can pass here any additional information related to this feature file
   #comments are done using hash tag sign in feature file
-  @smokeTest
+  @googleTitleVerification
   Scenario: Google title verification
     When User is on google page
     Then User should see title contains Google

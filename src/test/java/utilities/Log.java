@@ -5,9 +5,12 @@ import org.apache.logging.log4j.Logger;
 
 public class Log {
 
+
     private static Logger logger = LogManager.getLogger(Log.class);
 
+
     public static void start(String testName) {
+
         logger.info("Scenario start point: " + testName);
     }
 

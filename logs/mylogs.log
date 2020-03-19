@@ -29,3 +29,60 @@
 [INFO ] 2020-03-11 11:13:03.041 [main] Log - Scenario start point: Etsy search title verification
 [INFO ] 2020-03-11 11:13:03.046 [main] Log - Scenario start point: Etsy search title verification
 [INFO ] 2020-03-11 11:15:44.813 [main] Log - Scenario start point: Google title verification after searching a term
+[INFO ] 2020-03-18 17:06:46.896 [main] Log - Scenario start point: Dzone header comparison
+[INFO ] 2020-03-18 17:06:54.394 [main] Log - user is on: https://dzone.com/articles/gradle-vs-maven 
+[INFO ] 2020-03-18 17:07:28.229 [main] Log - Scenario start point: Dzone header comparison
+[INFO ] 2020-03-18 17:11:08.697 [main] Log - Scenario start point: Dzone header comparison
+[INFO ] 2020-03-18 17:11:42.913 [main] Log - Scenario start point: Dzone header comparison
+[INFO ] 2020-03-18 17:15:11.538 [main] Log - Scenario start point: Dzone header comparison
+[INFO ] 2020-03-18 17:16:12.099 [main] Log - Scenario start point: Dzone header comparison
+[INFO ] 2020-03-18 17:16:19.209 [main] Log - user is on: https://dzone.com/articles/gradle-vs-maven 
+[INFO ] 2020-03-18 17:16:19.255 [main] Log - header 1 is taken: Gradle vs. Maven
+[INFO ] 2020-03-18 17:16:21.138 [main] Log - user is on: https://dzone.com/articles/api-security-weekly-issue-71
+[INFO ] 2020-03-18 17:16:21.167 [main] Log - header 2 is taken: API Security Weekly: Issue #71
+[WARN ] 2020-03-18 17:16:21.167 [main] Log - comparing data
+[INFO ] 2020-03-18 17:16:21.617 [main] Log - user is on: https://dzone.com/articles/gradle-vs-maven 
+[INFO ] 2020-03-18 17:16:21.644 [main] Log - header 1 is taken: Gradle vs. Maven
+[INFO ] 2020-03-18 17:16:22.002 [main] Log - user is on: https://dzone.com/articles/api-security-weekly-issue-71
+[INFO ] 2020-03-18 17:16:22.028 [main] Log - header 2 is taken: API Security Weekly: Issue #71
+[WARN ] 2020-03-18 17:16:22.028 [main] Log - comparing data
+[INFO ] 2020-03-18 17:37:46.671 [main] Log - Scenario start point: Dzone header comparison
+[INFO ] 2020-03-18 17:37:52.321 [main] Log - user is on: https://dzone.com/articles/gradle-vs-maven 
+[INFO ] 2020-03-18 17:37:52.442 [main] Log - header 1 is taken: Gradle vs. Maven
+[INFO ] 2020-03-18 17:37:53.087 [main] Log - user is on: https://dzone.com/articles/api-security-weekly-issue-71
+[INFO ] 2020-03-18 17:37:53.095 [main] Log - header 2 is taken: API Security Weekly: Issue #71
+[WARN ] 2020-03-18 17:37:53.095 [main] Log - comparing data
+[INFO ] 2020-03-18 17:37:53.309 [main] Log - user is on: https://dzone.com/articles/gradle-vs-maven 
+[INFO ] 2020-03-18 17:37:53.324 [main] Log - header 1 is taken: Gradle vs. Maven
+[INFO ] 2020-03-18 17:37:53.407 [main] Log - user is on: https://dzone.com/articles/api-security-weekly-issue-71
+[INFO ] 2020-03-18 17:37:53.415 [main] Log - header 2 is taken: API Security Weekly: Issue #71
+[WARN ] 2020-03-18 17:37:53.415 [main] Log - comparing data
+[INFO ] 2020-03-18 17:38:58.901 [main] Log - Scenario start point: Google title verification
+[INFO ] 2020-03-18 17:42:38.070 [main] Log - Scenario start point: Google title verification
+[INFO ] 2020-03-18 17:43:22.422 [main] Log - Scenario start point: Dzone header comparison
+[INFO ] 2020-03-18 17:43:25.001 [main] Log - user is on: https://dzone.com/articles/gradle-vs-maven 
+[INFO ] 2020-03-18 17:43:25.114 [main] Log - header 1 is taken: Gradle vs. Maven
+[INFO ] 2020-03-18 17:43:25.424 [main] Log - user is on: https://dzone.com/articles/api-security-weekly-issue-71
+[INFO ] 2020-03-18 17:43:25.431 [main] Log - header 2 is taken: API Security Weekly: Issue #71
+[WARN ] 2020-03-18 17:43:25.431 [main] Log - comparing data
+[INFO ] 2020-03-18 17:43:25.577 [main] Log - user is on: https://dzone.com/articles/gradle-vs-maven 
+[INFO ] 2020-03-18 17:43:25.583 [main] Log - header 1 is taken: Gradle vs. Maven
+[INFO ] 2020-03-18 17:43:25.648 [main] Log - user is on: https://dzone.com/articles/api-security-weekly-issue-71
+[INFO ] 2020-03-18 17:43:25.656 [main] Log - header 2 is taken: API Security Weekly: Issue #71
+[WARN ] 2020-03-18 17:43:25.656 [main] Log - comparing data
+[INFO ] 2020-03-18 17:44:49.070 [main] Log - Scenario start point: Google title verification
+[INFO ] 2020-03-18 17:48:19.943 [main] Log - Scenario start point: Google title verification
+[INFO ] 2020-03-18 17:48:21.448 [main] Log - user is on home page
+[INFO ] 2020-03-18 17:48:21.451 [main] Log - comparing title
+[INFO ] 2020-03-18 18:14:53.665 [main] Log - Scenario start point: Google title verification
+[INFO ] 2020-03-18 18:14:55.136 [main] Log - user is on home page
+[INFO ] 2020-03-18 18:14:55.139 [main] Log - comparing title
+[INFO ] 2020-03-18 18:35:29.376 [main] Log - Scenario start point: Google title verification
+[INFO ] 2020-03-18 18:35:30.739 [main] Log - user is on home page
+[INFO ] 2020-03-18 18:35:30.742 [main] Log - comparing title
+[INFO ] 2020-03-18 18:35:46.208 [main] Log - Scenario start point: Google title verification
+[INFO ] 2020-03-18 18:35:47.606 [main] Log - user is on home page
+[INFO ] 2020-03-18 18:35:47.608 [main] Log - comparing title
+[INFO ] 2020-03-18 18:46:37.078 [main] Log - Scenario start point: Google title verification
+[INFO ] 2020-03-18 18:46:38.443 [main] Log - user is on home page
+[INFO ] 2020-03-18 18:46:38.446 [main] Log - comparing title
