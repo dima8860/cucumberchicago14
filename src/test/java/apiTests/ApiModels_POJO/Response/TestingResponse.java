@@ -1,6 +1,7 @@
 package apiTests.ApiModels_POJO.Response;
 
-import apiTests.ApiModels_POJO.Teacher.Teacher;
+import API_Models.ResponseBody;
+import API_Models.Teacher.Teacher;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.RestAssured;
