@@ -12,7 +12,7 @@ import utilities.ExtentReport;
                 "json:target/cukesreport.json"},// this is for reports under target folder
         features = "src/test/resources/features",
         glue = "step_definitions",
-         tags = "@googleTitleVerification",
+         tags = "@E2ENameValidation",
         dryRun = false
 
 

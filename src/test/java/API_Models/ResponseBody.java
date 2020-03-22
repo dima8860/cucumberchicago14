@@ -15,6 +15,8 @@ public class ResponseBody {
     // must have getters and setters or simply use Lombok
     List<Student> students;
     List<Teacher> teachers;
+    String message;
+    int status;
 
 
 }

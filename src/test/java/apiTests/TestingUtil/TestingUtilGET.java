@@ -9,9 +9,9 @@ import utilities.APIUtil;
 public class TestingUtilGET {
     @Test
     public void teacherTesting(){
-        String resource = "/teacher/all";
+        String resource = "/teacher/2716";
         APIUtil.hitGET(resource);
-        System.out.println(APIUtil.getResponseBody().getTeachers());
+        System.out.println(APIUtil.getResponseBody().getTeachers().size());
     }
 
     @Test

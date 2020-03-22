@@ -1,12 +1,14 @@
 package mentoring.Instagram;
 
-import utilities.Config;
-
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class Instagram {
     public List<InstagramUser> users;
+    String username = "cbt1";
+    String password = "Cbt2020";
+    String token = "123";
 
     public Instagram(){
         users = new ArrayList<>();
@@ -20,6 +22,17 @@ public class Instagram {
 - updateUserInfo ==> done
 - updatePostInfo ==>
      */
+    public String login(String username, String password){
+       if(username.equalsIgnoreCase(this.username) && password.equalsIgnoreCase(this.password)) {
+           Random random = new Random();
+           String token = random.nextInt(1000000) + "dh";
+           this.token = token;
+           return token;
+        }
+        System.out.println("Login Failed");
+       return "";
+    }
+
 
     public void addUser(InstagramUser instagramUser) {
         boolean found = false;
@@ -72,7 +85,7 @@ public class Instagram {
     }
 
     public void seeAllUsers(String secretKey){
-        if(Config.getProperty("apiKey").equals(secretKey)) {
+        if(this.token.equals(secretKey)) {
             for (int i = 0; i < users.size(); i++) {
                 System.out.println("User " + (i + 1));
                 System.out.println("Name: " + users.get(i).name);

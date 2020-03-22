@@ -26,11 +26,13 @@ public class Hooks {
             byte [] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
             scenario.embed(screenshot, "image/png");
             ExtentReport.fail();
+            Log.failed(scenario.getName());
         }
         else {
             ExtentReport.pass();
+            Log.pass(scenario.getName());
         }
-
+        Log.finish(scenario.getName());
         Driver.quitDriver();
 
     }

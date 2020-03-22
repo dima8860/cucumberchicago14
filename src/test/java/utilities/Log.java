@@ -11,7 +11,19 @@ public class Log {
 
     public static void start(String testName) {
 
-        logger.info("Scenario start point: " + testName);
+        logger.info("<<<<<<<< Scenario : " + testName + " STARTED >>>>>>");
+    }
+    public static void finish(String testName) {
+
+        logger.info("<<<<<<<< Scenario : " + testName + " FINISHED >>>>>>");
+    }
+    public static void pass(String testName) {
+
+        logger.info("Scenario " + testName + " PASSED!!!");
+    }
+    public static void failed(String testName) {
+
+        logger.warn("Scenario " + testName + " FAILED!!!");
     }
 
     public static void info(String message){

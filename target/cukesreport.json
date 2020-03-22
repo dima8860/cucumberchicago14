@@ -1,12 +1,12 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
         "before": [
           {
             "result": {
-              "duration": 446661618,
+              "duration": 761732738,
               "status": "passed"
             },
             "match": {
@@ -14,14 +14,14 @@
             }
           }
         ],
-        "line": 7,
-        "name": "Google title verification",
+        "line": 24,
+        "name": "UI vs API cross data validation with name",
         "description": "",
-        "id": "google-feature-verification;google-title-verification",
+        "id": "teacher-details-end-to-end-for-ui-vs-api;ui-vs-api-cross-data-validation-with-name;;2",
         "after": [
           {
             "result": {
-              "duration": 7096246,
+              "duration": 90480772,
               "status": "passed"
             },
             "match": {
@@ -30,57 +30,87 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 1239495697,
+              "duration": 1236199131,
               "status": "passed"
             },
-            "line": 8,
-            "name": "User is on google page",
+            "line": 17,
+            "name": "user gets teacher at \"/teacher/name/Rahul\"",
             "match": {
-              "location": "Google_StepsDefs.user_is_on_google_page()"
+              "arguments": [
+                {
+                  "val": "\"/teacher/name/Rahul\"",
+                  "offset": 21
+                }
+              ],
+              "location": "TeacherDeletingService_stepDefs.user_gets_teacher_at(String)"
             },
-            "keyword": "When "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 3558559,
+              "duration": 2775849746,
               "status": "passed"
             },
-            "line": 9,
-            "name": "User should see title contains Google",
+            "line": 18,
+            "name": "user goes to cybertek training application",
             "match": {
-              "location": "Google_StepsDefs.user_should_see_title_contains_Google()"
+              "location": "TeacherDetailsE2E_stepDefs.user_goes_to_cybertek_training_application()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2049169568,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user searches for teachers with name \"Rahul\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Rahul\"",
+                  "offset": 37
+                }
+              ],
+              "location": "TeacherDetailsE2E_stepDefs.user_searches_for_teachers_with_name(String)"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 114969566,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user cross validates teachers name result on API and on UI with \"Rahul\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Rahul\"",
+                  "offset": 64
+                }
+              ],
+              "location": "TeacherDetailsE2E_stepDefs.user_cross_validates_teachers_name_result_on_API_and_on_UI_with(String)"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@regression"
-          },
-          {
-            "name": "@googleTitleVerification"
+            "name": "@E2ENameValidation"
           }
         ]
       }
     ],
-    "name": "Google feature verification",
-    "description": "  Agile Story: User Stories, acceptance criteria\n  Basically we can pass here any additional information related to this feature file",
-    "id": "google-feature-verification",
+    "name": "Teacher details End to End for UI vs API",
+    "description": "",
+    "id": "teacher-details-end-to-end-for-ui-vs-api",
     "keyword": "Feature",
-    "uri": "src/test/resources/features/google_features/google.feature",
-    "tags": [
-      {
-        "name": "@regression",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
+    "uri": "src/test/resources/features/cyberterkTraining_features/teacherDetailsE2E.feature",
+    "tags": []
   }
 ]

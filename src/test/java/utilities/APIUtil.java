@@ -17,10 +17,11 @@ public class APIUtil {
 
 
     public static void hitGET(String resource) {
+        // * Base URL + resource = URI(full url in order to hit API properly)
         String uri = Config.getProperty("baseURL") + resource;
         Response response = RestAssured.get(uri);  // ==
       //  Response response = RestAssured.given().header("secretKey", "123CyberPassword").get(uri); ==> with authentication code
-        System.out.println(response.asString());
+        System.out.println("INFORMATION RECEIVED: " + response.asString());
         System.out.println("STATUS CODE: " + response.statusCode());
         ObjectMapper objectMapper = new ObjectMapper();
         try {
@@ -54,7 +55,7 @@ public class APIUtil {
         } catch (JsonProcessingException e) {
             e.printStackTrace();
         }
-        System.out.println(response.asString());
+        System.out.println("INFORMATION CREATED: " + response.asString());
         System.out.println("STATUS CODE: " + response.statusCode());
 
     }
@@ -63,19 +64,40 @@ public class APIUtil {
     public static void hitDELETE(String resource) {
         String uri = Config.getProperty("baseURL") + resource;
         Response response = RestAssured.delete(uri);
-        System.out.println(response.asString());
+        System.out.println("INFORMATION DELETED: " + response.asString());
         System.out.println("STATUS CODE: " + response.statusCode());
         ObjectMapper objectMapper = new ObjectMapper();
         try {
             responseBody = objectMapper.readValue(response.asString(), ResponseBody.class);
         } catch (JsonProcessingException e) {
+            System.err.println("WARNING!:\n Response could not map properly with Jackson library");
+        }
+    }
+
+    public static void hitPUT(String resource, RequestBody body){
+        String uri = Config.getProperty("baseURL")+ resource;
+        ObjectMapper objectMapper = new ObjectMapper();
+        String bodyJson = "";
+        // CONVERTING OBJECT TO JSON
+        try{
+            bodyJson = objectMapper.writeValueAsString(body);
+        }catch (Exception e) {
+            e.printStackTrace();
+        }
+        // GOT ABOVE JSON FORMAT READY TO SEND FOR UPDATE
+        Response response = RestAssured.given().contentType(ContentType.JSON).body(bodyJson).when().put(uri);
+        //SENT JSON WITH PUT METHOD
+        System.out.println("INFORMATION UPDATED: " + response.asString());
+        System.out.println("STATUS CODE: " + response.statusCode());
+        // CONVERTING JSON TO OBJECT (RESPONSE BODY)
+        try{
+           // responseBody = objectMapper.readValues(response.asString(), ResponseBody.class);
+            responseBody = objectMapper.readValue(response.asString(), ResponseBody.class);
+        }catch (Exception e) {
             e.printStackTrace();
         }
 
+
     }
-
-
-
-
 
 }
