@@ -23,7 +23,7 @@ Feature: Teacher details End to End for UI vs API
       | resource            | teacherName |
       | /teacher/name/Rahul | Rahul       |
 
-    
+
   Scenario: API vs DB end to end data validation
     Given user gets teacher at "/teacher/2625"
     And user connects to Cybertek training DB
