@@ -1,33 +1,25 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/cyberterkTraining_features/teacherDetailsE2E.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/cyberterkTraining_features/studentsListByBatchAPI.feature");
 formatter.feature({
-  "name": "Teacher details End to End for UI vs API",
+  "name": "Student List API",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenarioOutline({
-  "name": "UI vs API cross data validation with name",
+  "name": "Getting list of students by batch number",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@E2ENameValidation"
+      "name": "@batchID"
     }
   ]
 });
 formatter.step({
-  "name": "user gets teacher at \"\u003cresource\u003e\"",
+  "name": "user gets students list with \"\u003cresource\u003e\"",
   "keyword": "Given "
 });
 formatter.step({
-  "name": "user goes to cybertek training application",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "user searches for teachers with name \"\u003cteacherName\u003e\"",
-  "keyword": "Then "
-});
-formatter.step({
-  "name": "user cross validates teachers name result on API and on UI with \"\u003cteacherName\u003e\"",
+  "name": "user validates data from response by batch number \"\u003cbatchID\u003e\"",
   "keyword": "And "
 });
 formatter.examples({
@@ -38,24 +30,24 @@ formatter.examples({
     {
       "cells": [
         "resource",
-        "teacherName"
+        "batchID"
       ]
     },
     {
       "cells": [
-        "/teacher/name/Rahul",
-        "Rahul"
+        "/student/batch/14",
+        "14"
       ]
     }
   ]
 });
 formatter.scenario({
-  "name": "UI vs API cross data validation with name",
+  "name": "Getting list of students by batch number",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@E2ENameValidation"
+      "name": "@batchID"
     }
   ]
 });
@@ -63,41 +55,21 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "user gets teacher at \"/teacher/name/Rahul\"",
+  "name": "user gets students list with \"/student/batch/14\"",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "TeacherDeletingService_stepDefs.user_gets_teacher_at(String)"
+  "location": "StudentsListAPI.user_gets_students_list_with(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user goes to cybertek training application",
+  "name": "user validates data from response by batch number \"14\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "TeacherDetailsE2E_stepDefs.user_goes_to_cybertek_training_application()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user searches for teachers with name \"Rahul\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "TeacherDetailsE2E_stepDefs.user_searches_for_teachers_with_name(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user cross validates teachers name result on API and on UI with \"Rahul\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "TeacherDetailsE2E_stepDefs.user_cross_validates_teachers_name_result_on_API_and_on_UI_with(String)"
+  "location": "StudentsListAPI.user_validates_data_from_response_by_batch_number(String)"
 });
 formatter.result({
   "status": "passed"

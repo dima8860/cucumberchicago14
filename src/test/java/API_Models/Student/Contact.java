@@ -9,6 +9,7 @@ import lombok.Data;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Contact {
     String phone;
-    String email;
+    String EmailAddress;
+    String premanentAddress;
 
 }

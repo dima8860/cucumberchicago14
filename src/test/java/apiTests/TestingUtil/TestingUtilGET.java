@@ -9,7 +9,7 @@ import utilities.APIUtil;
 public class TestingUtilGET {
     @Test
     public void teacherTesting(){
-        String resource = "/teacher/2716";
+        String resource = "/teacher/2821";
         APIUtil.hitGET(resource);
         System.out.println(APIUtil.getResponseBody().getTeachers().size());
     }
@@ -39,6 +39,7 @@ public class TestingUtilGET {
             Assert.fail("Student batch failed at:  " + index);
         }
     }
+
 
 
 }

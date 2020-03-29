@@ -1,5 +1,7 @@
 package API_Models;
 
+import API_Models.Student.Company;
+import API_Models.Student.Contact;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
@@ -10,11 +12,8 @@ import lombok.Data;
 public class RequestBody {
     // for posting API
 
-    String firstName;
-    String lastName;
-    String joinDate;
-    String emailAddress;
-    int salary;
+    String premanentAddress;
+    String section;
     String subject;
     int batch;
     String birthDate;
@@ -22,7 +21,14 @@ public class RequestBody {
     String gender;
     String password;
     String phone;
-    String premanentAddress;
-    String section;
+    String firstName;
+    String lastName;
+    String emailAddress;
+    String joinDate;
+    int salary;
     int teacherId;
+    String major;
+    String admissionNo;
+    Contact contact;
+    Company company;
 }

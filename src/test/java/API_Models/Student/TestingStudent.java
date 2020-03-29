@@ -40,7 +40,7 @@ public class TestingStudent {
         company.setAddress(address);
 
         Contact contact = new Contact();
-        contact.setEmail("bestemail@gmail.com");
+        contact.setEmailAddress("bestemail@gmail.com");
         contact.setPhone("7738859124");
 
         Student student = new Student();

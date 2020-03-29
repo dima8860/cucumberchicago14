@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 761732738,
+              "duration": 827704564,
               "status": "passed"
             },
             "match": {
@@ -14,14 +14,14 @@
             }
           }
         ],
-        "line": 24,
-        "name": "UI vs API cross data validation with name",
+        "line": 9,
+        "name": "Getting list of students by batch number",
         "description": "",
-        "id": "teacher-details-end-to-end-for-ui-vs-api;ui-vs-api-cross-data-validation-with-name;;2",
+        "id": "student-list-api;getting-list-of-students-by-batch-number;;2",
         "after": [
           {
             "result": {
-              "duration": 90480772,
+              "duration": 139138212,
               "status": "passed"
             },
             "match": {
@@ -34,83 +34,53 @@
         "steps": [
           {
             "result": {
-              "duration": 1236199131,
+              "duration": 2805396333,
               "status": "passed"
             },
-            "line": 17,
-            "name": "user gets teacher at \"/teacher/name/Rahul\"",
+            "line": 5,
+            "name": "user gets students list with \"/student/batch/14\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"/teacher/name/Rahul\"",
-                  "offset": 21
+                  "val": "\"/student/batch/14\"",
+                  "offset": 29
                 }
               ],
-              "location": "TeacherDeletingService_stepDefs.user_gets_teacher_at(String)"
+              "location": "StudentsListAPI.user_gets_students_list_with(String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 2775849746,
+              "duration": 1064046,
               "status": "passed"
             },
-            "line": 18,
-            "name": "user goes to cybertek training application",
-            "match": {
-              "location": "TeacherDetailsE2E_stepDefs.user_goes_to_cybertek_training_application()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2049169568,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "user searches for teachers with name \"Rahul\"",
+            "line": 6,
+            "name": "user validates data from response by batch number \"14\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Rahul\"",
-                  "offset": 37
+                  "val": "\"14\"",
+                  "offset": 50
                 }
               ],
-              "location": "TeacherDetailsE2E_stepDefs.user_searches_for_teachers_with_name(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 114969566,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "user cross validates teachers name result on API and on UI with \"Rahul\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Rahul\"",
-                  "offset": 64
-                }
-              ],
-              "location": "TeacherDetailsE2E_stepDefs.user_cross_validates_teachers_name_result_on_API_and_on_UI_with(String)"
+              "location": "StudentsListAPI.user_validates_data_from_response_by_batch_number(String)"
             },
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@E2ENameValidation"
+            "name": "@batchID"
           }
         ]
       }
     ],
-    "name": "Teacher details End to End for UI vs API",
+    "name": "Student List API",
     "description": "",
-    "id": "teacher-details-end-to-end-for-ui-vs-api",
+    "id": "student-list-api",
     "keyword": "Feature",
-    "uri": "src/test/resources/features/cyberterkTraining_features/teacherDetailsE2E.feature",
+    "uri": "src/test/resources/features/cyberterkTraining_features/studentsListByBatchAPI.feature",
     "tags": []
   }
 ]

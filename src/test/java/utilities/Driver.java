@@ -21,6 +21,9 @@ public class Driver {
     private Driver() {
 
     }
+    public static WebDriver getReference(){
+        return driver;
+    }
 
     public static WebDriver getDriver() {
         if (driver == null) {
@@ -62,6 +65,7 @@ public class Driver {
     }
 
     public static void quitDriver() {
+        System.out.println("quiting driver");
         if (driver != null) {
             driver.quit();
             driver = null;

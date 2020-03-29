@@ -158,3 +158,91 @@
 [INFO ] 2020-03-22 17:02:18.744 [main] Log - <<<<<<<< Scenario : UI vs API cross data validation with name STARTED >>>>>>
 [INFO ] 2020-03-22 17:02:25.011 [main] Log - Scenario UI vs API cross data validation with name PASSED!!!
 [INFO ] 2020-03-22 17:02:25.013 [main] Log - <<<<<<<< Scenario : UI vs API cross data validation with name FINISHED >>>>>>
+[INFO ] 2020-03-25 19:09:42.733 [main] Log - <<<<<<<< Scenario : Getting list of students by batch number STARTED >>>>>>
+[INFO ] 2020-03-25 19:09:44.257 [main] Log - Scenario Getting list of students by batch number PASSED!!!
+[INFO ] 2020-03-25 19:09:44.257 [main] Log - <<<<<<<< Scenario : Getting list of students by batch number FINISHED >>>>>>
+[INFO ] 2020-03-25 19:12:22.120 [main] Log - <<<<<<<< Scenario : Getting list of students by batch number STARTED >>>>>>
+[INFO ] 2020-03-25 19:12:23.507 [main] Log - Scenario Getting list of students by batch number PASSED!!!
+[INFO ] 2020-03-25 19:12:23.507 [main] Log - <<<<<<<< Scenario : Getting list of students by batch number FINISHED >>>>>>
+[INFO ] 2020-03-25 19:13:08.785 [main] Log - <<<<<<<< Scenario : Getting list of students by batch number STARTED >>>>>>
+[INFO ] 2020-03-25 19:13:10.169 [main] Log - <<<<<<<< Scenario : Getting list of students by batch number FINISHED >>>>>>
+[INFO ] 2020-03-25 19:16:17.079 [main] Log - <<<<<<<< Scenario : Positive teacher deleting STARTED >>>>>>
+[INFO ] 2020-03-25 19:16:18.665 [main] Log - Scenario Positive teacher deleting PASSED!!!
+[INFO ] 2020-03-25 19:16:18.666 [main] Log - <<<<<<<< Scenario : Positive teacher deleting FINISHED >>>>>>
+[INFO ] 2020-03-25 19:17:01.479 [main] Log - <<<<<<<< Scenario : UI vs API cross data validation STARTED >>>>>>
+[INFO ] 2020-03-25 19:17:08.743 [main] Log - Scenario UI vs API cross data validation PASSED!!!
+[INFO ] 2020-03-25 19:17:08.743 [main] Log - <<<<<<<< Scenario : UI vs API cross data validation FINISHED >>>>>>
+[INFO ] 2020-03-25 19:17:08.837 [main] Log - <<<<<<<< Scenario : UI vs API cross data validation STARTED >>>>>>
+[INFO ] 2020-03-25 19:17:12.974 [main] Log - Scenario UI vs API cross data validation PASSED!!!
+[INFO ] 2020-03-25 19:17:12.974 [main] Log - <<<<<<<< Scenario : UI vs API cross data validation FINISHED >>>>>>
+[INFO ] 2020-03-25 19:20:03.577 [main] Log - Scenario UI vs API cross data validation PASSED!!!
+[INFO ] 2020-03-25 19:20:03.577 [main] Log - <<<<<<<< Scenario : UI vs API cross data validation FINISHED >>>>>>
+[INFO ] 2020-03-25 19:20:08.271 [main] Log - Scenario UI vs API cross data validation PASSED!!!
+[INFO ] 2020-03-25 19:20:08.271 [main] Log - <<<<<<<< Scenario : UI vs API cross data validation FINISHED >>>>>>
+[INFO ] 2020-03-25 19:21:58.221 [main] Log - <<<<<<<< Scenario : Header comparison STARTED >>>>>>
+[INFO ] 2020-03-25 19:21:58.222 [main] Log - start of the test
+[INFO ] 2020-03-25 19:21:58.223 [main] Log - user is on amazon
+[WARN ] 2020-03-25 19:21:58.223 [main] Log - login in amazon
+[INFO ] 2020-03-25 19:23:08.543 [main] Log - <<<<<<<< Scenario : UI vs API cross data validation STARTED >>>>>>
+[INFO ] 2020-03-25 19:23:14.864 [main] Log - Scenario UI vs API cross data validation PASSED!!!
+[INFO ] 2020-03-25 19:23:14.865 [main] Log - <<<<<<<< Scenario : UI vs API cross data validation FINISHED >>>>>>
+[INFO ] 2020-03-25 19:23:14.956 [main] Log - <<<<<<<< Scenario : UI vs API cross data validation STARTED >>>>>>
+[INFO ] 2020-03-25 19:23:19.306 [main] Log - Scenario UI vs API cross data validation PASSED!!!
+[INFO ] 2020-03-25 19:23:19.307 [main] Log - <<<<<<<< Scenario : UI vs API cross data validation FINISHED >>>>>>
+[INFO ] 2020-03-25 19:24:28.382 [main] Log - <<<<<<<< Scenario : Etsy search title verification STARTED >>>>>>
+[INFO ] 2020-03-25 19:24:33.453 [main] Log - <<<<<<<< Scenario : Etsy search title verification STARTED >>>>>>
+[INFO ] 2020-03-25 19:24:33.464 [main] Log - <<<<<<<< Scenario : Etsy search title verification STARTED >>>>>>
+[INFO ] 2020-03-25 19:24:33.473 [main] Log - <<<<<<<< Scenario : Etsy search title verification STARTED >>>>>>
+[INFO ] 2020-03-25 19:27:05.428 [main] Log - <<<<<<<< Scenario : Google title verification STARTED >>>>>>
+[INFO ] 2020-03-25 19:27:10.184 [main] Log - user is on home page
+[INFO ] 2020-03-25 19:27:10.189 [main] Log - comparing title
+[INFO ] 2020-03-25 19:27:10.196 [main] Log - Scenario Google title verification PASSED!!!
+[INFO ] 2020-03-25 19:27:10.196 [main] Log - <<<<<<<< Scenario : Google title verification FINISHED >>>>>>
+[INFO ] 2020-03-25 19:29:50.620 [main] Log - <<<<<<<< Scenario : Getting list of students by batch number STARTED >>>>>>
+[INFO ] 2020-03-25 19:29:52.132 [main] Log - Scenario Getting list of students by batch number PASSED!!!
+[INFO ] 2020-03-25 19:29:52.132 [main] Log - <<<<<<<< Scenario : Getting list of students by batch number FINISHED >>>>>>
+[INFO ] 2020-03-25 19:51:17.001 [main] Log - <<<<<<<< Scenario : Deleting student End to End scenario STARTED >>>>>>
+[INFO ] 2020-03-25 19:51:32.938 [main] Log - Scenario Deleting student End to End scenario PASSED!!!
+[INFO ] 2020-03-25 19:51:32.939 [main] Log - <<<<<<<< Scenario : Deleting student End to End scenario FINISHED >>>>>>
+[INFO ] 2020-03-25 19:54:26.084 [main] Log - <<<<<<<< Scenario : Deleting student End to End scenario STARTED >>>>>>
+[INFO ] 2020-03-25 19:54:41.457 [main] Log - Scenario Deleting student End to End scenario PASSED!!!
+[INFO ] 2020-03-25 19:54:41.457 [main] Log - <<<<<<<< Scenario : Deleting student End to End scenario FINISHED >>>>>>
+[INFO ] 2020-03-25 20:36:59.875 [main] Log - <<<<<<<< Scenario : Student creations with API E2E scenario STARTED >>>>>>
+[INFO ] 2020-03-25 20:37:02.599 [main] Log - Scenario Student creations with API E2E scenario PASSED!!!
+[INFO ] 2020-03-25 20:37:02.600 [main] Log - <<<<<<<< Scenario : Student creations with API E2E scenario FINISHED >>>>>>
+[INFO ] 2020-03-25 20:39:03.048 [main] Log - <<<<<<<< Scenario : Student creations with API E2E scenario STARTED >>>>>>
+[INFO ] 2020-03-25 20:39:05.866 [main] Log - Scenario Student creations with API E2E scenario PASSED!!!
+[INFO ] 2020-03-25 20:39:05.866 [main] Log - <<<<<<<< Scenario : Student creations with API E2E scenario FINISHED >>>>>>
+[INFO ] 2020-03-25 20:47:49.293 [main] Log - <<<<<<<< Scenario : Student creations with API E2E scenario STARTED >>>>>>
+[WARN ] 2020-03-25 20:47:55.436 [main] Log - Scenario Student creations with API E2E scenario FAILED!!!
+[INFO ] 2020-03-25 20:47:55.436 [main] Log - <<<<<<<< Scenario : Student creations with API E2E scenario FINISHED >>>>>>
+[INFO ] 2020-03-25 20:48:43.217 [main] Log - <<<<<<<< Scenario : Student creations with API E2E scenario STARTED >>>>>>
+[WARN ] 2020-03-25 20:48:49.003 [main] Log - Scenario Student creations with API E2E scenario FAILED!!!
+[INFO ] 2020-03-25 20:48:49.004 [main] Log - <<<<<<<< Scenario : Student creations with API E2E scenario FINISHED >>>>>>
+[INFO ] 2020-03-25 20:50:57.976 [main] Log - <<<<<<<< Scenario : Student creations with API E2E scenario STARTED >>>>>>
+[WARN ] 2020-03-25 20:51:14.565 [main] Log - Scenario Student creations with API E2E scenario FAILED!!!
+[INFO ] 2020-03-25 20:51:14.565 [main] Log - <<<<<<<< Scenario : Student creations with API E2E scenario FINISHED >>>>>>
+[INFO ] 2020-03-25 20:52:44.632 [main] Log - <<<<<<<< Scenario : Student creations with API E2E scenario STARTED >>>>>>
+[WARN ] 2020-03-25 20:53:01.762 [main] Log - Scenario Student creations with API E2E scenario FAILED!!!
+[INFO ] 2020-03-25 20:53:01.762 [main] Log - <<<<<<<< Scenario : Student creations with API E2E scenario FINISHED >>>>>>
+[INFO ] 2020-03-25 20:55:13.802 [main] Log - <<<<<<<< Scenario : Student creations with API E2E scenario STARTED >>>>>>
+[INFO ] 2020-03-25 20:55:19.822 [main] Log - Scenario Student creations with API E2E scenario PASSED!!!
+[INFO ] 2020-03-25 20:55:19.822 [main] Log - <<<<<<<< Scenario : Student creations with API E2E scenario FINISHED >>>>>>
+[INFO ] 2020-03-25 21:02:32.365 [main] Log - <<<<<<<< Scenario : Student creations with API E2E scenario STARTED >>>>>>
+[INFO ] 2020-03-25 21:02:38.464 [main] Log - Scenario Student creations with API E2E scenario PASSED!!!
+[INFO ] 2020-03-25 21:02:38.464 [main] Log - <<<<<<<< Scenario : Student creations with API E2E scenario FINISHED >>>>>>
+[INFO ] 2020-03-25 21:09:05.963 [main] Log - <<<<<<<< Scenario : Getting list of students by batch number STARTED >>>>>>
+[INFO ] 2020-03-25 21:09:08.707 [main] Log - Scenario Getting list of students by batch number PASSED!!!
+[INFO ] 2020-03-25 21:09:08.708 [main] Log - <<<<<<<< Scenario : Getting list of students by batch number FINISHED >>>>>>
+[INFO ] 2020-03-25 21:10:47.169 [main] Log - <<<<<<<< Scenario : Deleting student End to End scenario STARTED >>>>>>
+[INFO ] 2020-03-25 21:11:02.385 [main] Log - Scenario Deleting student End to End scenario PASSED!!!
+[INFO ] 2020-03-25 21:11:02.385 [main] Log - <<<<<<<< Scenario : Deleting student End to End scenario FINISHED >>>>>>
+[INFO ] 2020-03-25 21:13:13.173 [main] Log - <<<<<<<< Scenario : Deleting student End to End scenario STARTED >>>>>>
+[INFO ] 2020-03-25 21:13:28.379 [main] Log - Scenario Deleting student End to End scenario PASSED!!!
+[INFO ] 2020-03-25 21:13:28.379 [main] Log - <<<<<<<< Scenario : Deleting student End to End scenario FINISHED >>>>>>
+[INFO ] 2020-03-25 21:14:05.495 [main] Log - <<<<<<<< Scenario : Getting list of students by batch number STARTED >>>>>>
+[INFO ] 2020-03-25 21:14:08.289 [main] Log - Scenario Getting list of students by batch number PASSED!!!
+[INFO ] 2020-03-25 21:14:08.290 [main] Log - <<<<<<<< Scenario : Getting list of students by batch number FINISHED >>>>>>
+[INFO ] 2020-03-26 15:52:00.924 [main] Log - <<<<<<<< Scenario : Getting list of students by batch number STARTED >>>>>>
+[INFO ] 2020-03-26 15:52:03.827 [main] Log - Scenario Getting list of students by batch number PASSED!!!
+[INFO ] 2020-03-26 15:52:03.828 [main] Log - <<<<<<<< Scenario : Getting list of students by batch number FINISHED >>>>>>

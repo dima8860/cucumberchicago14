@@ -66,6 +66,9 @@ public class CBTHomePage {
     @FindBy(xpath = "//div[@class='row staff-grid-row']//h4/a")
     public List<WebElement> searchResultsName;
 
+    @FindBy (xpath = "(//div[@class='form-group custom-mt-form-group']//input)[1]")
+    public WebElement searchStudentById;
+
 
 
 }
