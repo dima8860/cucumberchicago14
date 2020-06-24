@@ -12,7 +12,7 @@ public class TestingUtilPOST {
     public void postTesting(){
         RequestBody requestBody = new RequestBody();
         requestBody.setEmailAddress("jb2020@gmail.com");
-        requestBody.setFirstName("Taras Shevchenko");
+        requestBody.setFirstName("Qa Analyst");
         requestBody.setJoinDate("11/11/18");
         requestBody.setLastName("Bandera");
         requestBody.setGender("Male");
@@ -33,6 +33,10 @@ public class TestingUtilPOST {
     @Test
     public void authentication() {
         Response response = RestAssured.given().header("username", "password").get("http://api.cybertektraining.com/teacher/all");
+        System.out.println(response.statusCode());
+        String str = response.asString();
+        System.out.println(str);
+
 
 
 

@@ -1,0 +1,77 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "required": [
+    "City",
+    "Temperature",
+    "Humidity",
+    "WeatherDescription",
+    "WindSpeed",
+    "WindDirectionDegree"
+  ],
+  "properties": {
+    "City": {
+      "$id": "#/properties/City",
+      "type": "string",
+      "title": "The City Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "All"
+      ]
+    },
+    "Temperature": {
+      "$id": "#/properties/Temperature",
+      "type": "string",
+      "title": "The Temperature Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "16.67 Degree celsius"
+      ]
+    },
+    "Humidity": {
+      "$id": "#/properties/Humidity",
+      "type": "string",
+      "title": "The Humidity Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "41 Percent"
+      ]
+    },
+    "WeatherDescription": {
+      "$id": "#/properties/WeatherDescription",
+      "type": "string",
+      "title": "The Weatherdescription Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "broken clouds"
+      ]
+    },
+    "WindSpeed": {
+      "$id": "#/properties/WindSpeed",
+      "type": "string",
+      "title": "The Windspeed Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "5.1 Km per hour"
+      ]
+    },
+    "WindDirectionDegree": {
+      "$id": "#/properties/WindDirectionDegree",
+      "type": "string",
+      "title": "The Winddirectiondegree Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "210 Degree"
+      ]
+    }
+  }
+}

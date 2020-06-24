@@ -14,6 +14,28 @@ import utilities.Config;
 public class TestingResponse {
 
     @Test
+    public void testingApiPUT() throws JsonProcessingException {
+        // 1.GETTING INFO FROM DATABASE
+        ObjectMapper objectMapper = new ObjectMapper();
+        Response responseGet = RestAssured.get(Config.getProperty("baseURL") + "/teacher/2908");
+        System.out.println(responseGet.asString());
+        ResponseBody responseBody = objectMapper.readValue(responseGet.asString(),ResponseBody.class);
+        Teacher teacher = responseBody.getTeachers().get(0);
+        System.out.println(teacher);
+        // 2. EDITING DATA IN OBJECT
+        teacher.setEmailAddress("cyberLIONEL@yahoo.com");
+        teacher.setFirstName("Lionel the best");
+        // 3. CONVERTING OBJECT TO JSON
+        String teacherJson = objectMapper.writeValueAsString(teacher);
+        // 4. SENDING JSON TO DATABASE
+        responseGet = RestAssured.given().contentType(ContentType.JSON).body(teacherJson).when().put(Config.getProperty("baseURL") + "/teacher/update");
+        System.out.println(responseGet.asString());
+        System.out.println(responseGet.statusCode());
+
+
+    }
+
+    @Test
     //PUT API
     public void updateTeacherUPDATED() throws JsonProcessingException {
         ObjectMapper mapper = new ObjectMapper();
@@ -66,7 +88,7 @@ public class TestingResponse {
     public void createTeacherTest() throws JsonProcessingException {
         Teacher teacher = new Teacher();
         teacher.setEmailAddress("jb2020@gmail.com");
-        teacher.setFirstName("Postman");
+        teacher.setFirstName("Last Bird");
         teacher.setJoinDate("11/11/18");
         teacher.setLastName("Dukh");
         teacher.setGender("Male");
@@ -85,6 +107,7 @@ public class TestingResponse {
         System.out.println(teacherJson);
 
         Response response = RestAssured.given().contentType(ContentType.JSON).body(teacherJson).when().post("http://api.cybertektraining.com/teacher/create");
+
         System.out.println(response.statusCode());
         System.out.println(response.asString());
     }

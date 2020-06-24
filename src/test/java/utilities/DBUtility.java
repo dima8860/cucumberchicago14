@@ -13,11 +13,11 @@ public class DBUtility {
     private static ResultSet resultSet;
 
     public static void createConnection() throws SQLException {
-        switch (Config.getProperty("dbType")){
-            case "oracle" :
-                 connection = DriverManager.getConnection(Config.getProperty("oracleURL"), Config.getProperty("oracleUsername"), Config.getProperty("oraclePassword"));
+        switch (Config.getProperty("dbType")) {
+            case "oracle":
+                connection = DriverManager.getConnection(Config.getProperty("oracleURL"), Config.getProperty("oracleUsername"), Config.getProperty("oraclePassword"));
                 break;
-            case  "mysql" :
+            case "mysql":
                 // create connection for mysql
                 break;
             default:
@@ -26,9 +26,10 @@ public class DBUtility {
         }
     }
 
-    public static List<Map<Object, Object>> executeQuery (String query) throws SQLException {
 
-         statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
+    public static List<Map<Object, Object>> executeQuery(String query) throws SQLException {
+
+        statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
         resultSet = statement.executeQuery(query); // storing all data, use point to switch between rows. Default pointing to names of columns
         // to get first data row we need to run resultSet.next() to point to first data row
         ResultSetMetaData metaData = resultSet.getMetaData(); // ==> info about table, column names, count
@@ -38,10 +39,12 @@ public class DBUtility {
 
         while (resultSet.next()) { // we scrolling 1 row down at a time
             Map<Object, Object> map = new HashMap<>();
-            for(int i = 1; i <= numberOfColumns; i++) {
+            for (int i = 1; i <= numberOfColumns; i++) {
+                // we adding to map (which represents whole row) each cell with unique column name and record value: map(column, record)
                 // storing each cell in separate map like key == columnName; value == cellData
                 map.put(metaData.getColumnName(i), resultSet.getObject(i));  // // map gets info key == column name, value == is row number value
             }
+            // adding each map which is each row to our list
             data.add(map);
         }
 
@@ -50,7 +53,7 @@ public class DBUtility {
 
     public static void close() throws SQLException {
         if (connection != null) connection.close();
-       if (statement != null) statement.close();
+        if (statement != null) statement.close();
         if (resultSet != null) resultSet.close();
     }
 

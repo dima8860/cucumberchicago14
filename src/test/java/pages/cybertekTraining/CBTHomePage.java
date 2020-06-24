@@ -9,6 +9,7 @@ import java.util.List;
 
 public class CBTHomePage {
     public CBTHomePage()  {
+
         PageFactory.initElements(Driver.getDriver(), this);
     }
     @FindBy(xpath = "//label[contains(text(),'Teacher Name')]/preceding-sibling::*")

@@ -246,3 +246,23 @@
 [INFO ] 2020-03-26 15:52:00.924 [main] Log - <<<<<<<< Scenario : Getting list of students by batch number STARTED >>>>>>
 [INFO ] 2020-03-26 15:52:03.827 [main] Log - Scenario Getting list of students by batch number PASSED!!!
 [INFO ] 2020-03-26 15:52:03.828 [main] Log - <<<<<<<< Scenario : Getting list of students by batch number FINISHED >>>>>>
+[INFO ] 2020-04-01 14:00:54.204 [main] Log - <<<<<<<< Scenario : Verifying login with using authenticated data STARTED >>>>>>
+[INFO ] 2020-04-01 14:00:57.713 [main] Log - Scenario Verifying login with using authenticated data PASSED!!!
+[INFO ] 2020-04-01 14:00:57.714 [main] Log - <<<<<<<< Scenario : Verifying login with using authenticated data FINISHED >>>>>>
+[INFO ] 2020-04-01 14:02:01.413 [main] Log - <<<<<<<< Scenario : When user enters correct username and incorrect password user should see error message STARTED >>>>>>
+[INFO ] 2020-04-01 14:02:04.380 [main] Log - Scenario When user enters correct username and incorrect password user should see error message PASSED!!!
+[INFO ] 2020-04-01 14:02:04.380 [main] Log - <<<<<<<< Scenario : When user enters correct username and incorrect password user should see error message FINISHED >>>>>>
+[INFO ] 2020-04-01 14:03:10.974 [main] Log - <<<<<<<< Scenario : Etsy search title verification STARTED >>>>>>
+[WARN ] 2020-04-01 14:03:18.186 [main] Log - Scenario Etsy search title verification FAILED!!!
+[INFO ] 2020-04-01 14:03:18.188 [main] Log - <<<<<<<< Scenario : Etsy search title verification FINISHED >>>>>>
+[INFO ] 2020-04-01 14:03:18.296 [main] Log - <<<<<<<< Scenario : Etsy search title verification STARTED >>>>>>
+[INFO ] 2020-04-01 14:03:23.621 [main] Log - <<<<<<<< Scenario : Etsy search title verification STARTED >>>>>>
+[INFO ] 2020-05-14 12:20:25.340 [main] Log - <<<<<<<< Scenario : Etsy search title verification STARTED >>>>>>
+[WARN ] 2020-05-14 12:20:35.820 [main] Log - Scenario Etsy search title verification FAILED!!!
+[INFO ] 2020-05-14 12:20:35.821 [main] Log - <<<<<<<< Scenario : Etsy search title verification FINISHED >>>>>>
+[INFO ] 2020-05-14 12:20:35.951 [main] Log - <<<<<<<< Scenario : Etsy search title verification STARTED >>>>>>
+[WARN ] 2020-05-14 12:20:42.510 [main] Log - Scenario Etsy search title verification FAILED!!!
+[INFO ] 2020-05-14 12:20:42.511 [main] Log - <<<<<<<< Scenario : Etsy search title verification FINISHED >>>>>>
+[INFO ] 2020-05-14 12:20:42.618 [main] Log - <<<<<<<< Scenario : Etsy search title verification STARTED >>>>>>
+[INFO ] 2020-05-14 12:20:46.940 [main] Log - Scenario Etsy search title verification PASSED!!!
+[INFO ] 2020-05-14 12:20:46.940 [main] Log - <<<<<<<< Scenario : Etsy search title verification FINISHED >>>>>>

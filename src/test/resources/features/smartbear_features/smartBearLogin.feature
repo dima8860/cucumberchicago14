@@ -16,7 +16,7 @@ Feature: Smartbear login feature verifications
     And User should be able to enter correct password
     And User should be able to click on login button
     Then User should see Welcome, Tester! displayed when logged in
-
+  @negativeLoginSB
   Scenario: When user enters correct username and incorrect password user should see error message
     When User is on SmartBear login page
     And User enters correct username

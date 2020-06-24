@@ -36,7 +36,7 @@ public class APIUtil {
         return responseBody;
     }
 
-
+    // CREATE DATA
     public static void hitPOST(String resource, RequestBody body) {
         String uri = Config.getProperty("baseURL") + resource;
         ObjectMapper objectMapper = new ObjectMapper();
@@ -60,7 +60,7 @@ public class APIUtil {
 
     }
 
-
+        // DELETE DATA
     public static void hitDELETE(String resource) {
         String uri = Config.getProperty("baseURL") + resource;
         Response response = RestAssured.delete(uri);
@@ -74,8 +74,10 @@ public class APIUtil {
         }
     }
 
+
+    // UPDATE DATA
     public static void hitPUT(String resource, RequestBody body){
-        String uri = Config.getProperty("baseURL")+ resource;
+        String uri = Config.getProperty("baseURL") + resource;
         ObjectMapper objectMapper = new ObjectMapper();
         String bodyJson = "";
         // CONVERTING OBJECT TO JSON

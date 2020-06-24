@@ -15,7 +15,7 @@ Feature: Etsy search functionality
     When User searches for "wooden spoon"
     Then User should see "wooden spoon" in Etsy title
 
-  @etsy
+  @etsy2
   Scenario Outline: Etsy search title verification
     When User searches for "<searchValue>"
     Then User should see "<expectedTitle>" in Etsy title
